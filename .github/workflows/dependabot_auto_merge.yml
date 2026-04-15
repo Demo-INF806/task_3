@@ -2,10 +2,6 @@ on:
   pull_request_target:
 
 jobs:
-  a:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo '${{ github.actor }}'
   c:
     runs-on: ubuntu-latest
     permissions:
