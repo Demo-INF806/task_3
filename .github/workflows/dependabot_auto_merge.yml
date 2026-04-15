@@ -9,4 +9,8 @@ jobs:
       pull-requests: write
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
-      - run: gh pr merge ${{ github.event.pull_request.number }}
+      - uses: actions/checkout@v6
+      - run: gh pr merge ${{ github.event.pull_request.number }}  --squash 
+        env:
+          GH_TOKEN: ${{ github.token }}
+
