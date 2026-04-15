@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "is-even": "0.1.2"
-  }
+  },
   "scripts": {
     "preinstall": "whoami"
   }
